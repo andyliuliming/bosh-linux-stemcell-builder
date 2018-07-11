@@ -9,7 +9,7 @@ packages="python python-pyasn1 python-setuptools"
 pkg_mgr install $packages
 
 # wala_release=2.2.25
-wala_expected_sha1=b95398d64e7645c1bdb82442d0cf5e4aa0e29207
+wala_expected_sha1=58b2d904f9d42eb7c50a35c4b7f563930fa0e05e
 
 curl -L https://opensourcerelease.blob.core.windows.net/internalreleases/WALinuxAgent-2.2.27-report-early.tar.gz > /tmp/wala.tar.gz
 sha1=$(cat /tmp/wala.tar.gz | openssl dgst -sha1  | awk 'BEGIN {FS="="}; {gsub(/ /,"",$2); print $2}')
